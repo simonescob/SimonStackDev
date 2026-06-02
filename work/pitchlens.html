@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PitchLens — AI Pitch Deck Analyzer for Founders | Simón Escobar</title>
+  <meta name="description" content="Case study: PitchLens is an AI pitch deck analyzer that gives founders instant investor-grade feedback. Built with Next.js, OpenAI, and PDF parsing on a serverless stack.">
+  <meta name="author" content="Simón Escobar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://simonstackdev.com/work/pitchlens">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://simonstackdev.com/work/pitchlens">
+  <meta property="og:title" content="PitchLens — AI Pitch Deck Analyzer for Founders">
+  <meta property="og:description" content="How I built an AI pitch deck analyzer that parses uploaded decks and returns investor-grade feedback in seconds using Next.js and OpenAI.">
+  <meta property="og:image" content="https://simonstackdev.com/og.png">
+  <meta property="og:site_name" content="SimonStackDev">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PitchLens — AI Pitch Deck Analyzer for Founders">
+  <meta name="twitter:description" content="How I built an AI pitch deck analyzer that returns investor-grade feedback in seconds.">
+  <meta name="twitter:image" content="https://simonstackdev.com/og.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://simonstackdev.com/work/pitchlens#webpage",
+        "url": "https://simonstackdev.com/work/pitchlens",
+        "name": "PitchLens — AI Pitch Deck Analyzer for Founders | Simón Escobar",
+        "description": "Case study: PitchLens is an AI pitch deck analyzer that gives founders instant investor-grade feedback. Built with Next.js, OpenAI, and PDF parsing.",
+        "isPartOf": {"@id": "https://simonstackdev.com/#website"},
+        "about": {"@id": "https://simonstackdev.com/#person"},
+        "inLanguage": "en-US",
+        "dateModified": "2026-06-02"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://simonstackdev.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Work", "item": "https://simonstackdev.com/work/"},
+          {"@type": "ListItem", "position": 3, "name": "PitchLens", "item": "https://simonstackdev.com/work/pitchlens"}
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "PitchLens",
+        "url": "https://simonstackdev.com/work/pitchlens",
+        "applicationCategory": "BusinessApplication",
+        "description": "AI pitch deck analyzer that parses uploaded investor decks and returns structured, investor-grade feedback on narrative, market, traction, and design in seconds.",
+        "creator": {"@id": "https://simonstackdev.com/#person"},
+        "programmingLanguage": ["TypeScript", "JavaScript"],
+        "operatingSystem": "Web"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0C0C0C; color: #e5e5e5; line-height: 1.6; }
+    a { color: #5BBECB; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { background: #033F63; padding: 16px 48px; display: flex; justify-content: space-between; align-items: center; }
+    nav .logo { font-weight: 700; font-size: 18px; color: #fff; }
+    nav .back { color: rgba(255,255,255,0.7); font-size: 14px; }
+    .hero { background: #033F63; padding: 64px 48px 48px; }
+    .hero .label { display: inline-block; background: rgba(91,190,203,0.15); border: 1px solid rgba(91,190,203,0.3); color: #5BBECB; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+    .hero h1 { font-size: 42px; font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 16px; }
+    .hero p { font-size: 18px; color: rgba(255,255,255,0.7); max-width: 640px; }
+    .meta-bar { display: flex; gap: 32px; flex-wrap: wrap; padding: 20px 0 0; }
+    .meta-bar .item { font-size: 13px; }
+    .meta-bar .item span { color: rgba(255,255,255,0.4); display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
+    .content { max-width: 760px; margin: 0 auto; padding: 56px 48px; }
+    .content h2 { font-size: 24px; font-weight: 700; color: #fff; margin: 40px 0 16px; }
+    .content h2:first-child { margin-top: 0; }
+    .content p { color: rgba(255,255,255,0.7); margin-bottom: 16px; font-size: 16px; }
+    .tech-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 24px; }
+    .tech-tag { background: rgba(40,102,110,0.25); border: 1px solid rgba(91,190,203,0.3); color: #5BBECB; padding: 5px 12px; border-radius: 20px; font-size: 13px; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 24px 0; }
+    .stat { background: #111; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 24px 20px; text-align: center; }
+    .stat .value { font-size: 36px; font-weight: 800; color: #5BBECB; display: block; }
+    .stat .label { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+    .back-link { display: inline-block; margin-top: 40px; color: rgba(255,255,255,0.5); font-size: 14px; }
+    footer { text-align: center; padding: 32px 48px; color: rgba(255,255,255,0.3); font-size: 13px; border-top: 1px solid rgba(255,255,255,0.07); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="https://simonstackdev.com" class="logo">SimonStackDev</a>
+    <a href="https://simonstackdev.com" class="back">← Back to portfolio</a>
+  </nav>
+
+  <header class="hero">
+    <div class="label">Case Study</div>
+    <h1>PitchLens</h1>
+    <p>An AI pitch deck analyzer that gives founders instant, investor-grade feedback on their fundraising decks — before they ever step into an investor meeting.</p>
+    <div class="meta-bar">
+      <div class="item"><span>Role</span>Full-Stack Developer</div>
+      <div class="item"><span>Stack</span>Next.js · OpenAI · PDF Parsing</div>
+      <div class="item"><span>Year</span>2025</div>
+    </div>
+  </header>
+
+  <main class="content">
+    <h2>Overview</h2>
+    <p>PitchLens is a web application that lets startup founders upload their pitch deck and receive a detailed, structured analysis within seconds. Instead of paying a consultant or waiting weeks for investor feedback, founders get an objective breakdown of their narrative clarity, market sizing, traction story, business model, and slide design — along with concrete, prioritized suggestions for improvement.</p>
+    <p>I built PitchLens end to end: the deck upload and parsing pipeline, the AI analysis engine, the report rendering UI, and the serverless deployment on Vercel.</p>
+
+    <h2>Technical Stack</h2>
+    <div class="tech-list">
+      <span class="tech-tag">Next.js 14</span>
+      <span class="tech-tag">TypeScript</span>
+      <span class="tech-tag">OpenAI API</span>
+      <span class="tech-tag">pdf-parse</span>
+      <span class="tech-tag">Vercel Blob</span>
+      <span class="tech-tag">Tailwind CSS</span>
+      <span class="tech-tag">Serverless Functions</span>
+      <span class="tech-tag">Zod</span>
+    </div>
+
+    <h2>The Problem</h2>
+    <p>First-time founders rarely get honest, structured feedback on their pitch decks until they're already in front of investors — at which point a weak deck can cost them the round. Professional deck review services are expensive and slow, and asking friends or advisors yields inconsistent, subjective opinions. There was a clear gap for an affordable, instant tool that applies a consistent investor lens to any deck.</p>
+
+    <h2>Architecture & Implementation</h2>
+    <p>PitchLens is built on Next.js with the App Router, deployed entirely on Vercel's serverless platform. When a founder uploads a deck, the PDF is stored in Vercel Blob and the text content of each slide is extracted server-side using a PDF parsing library. Because pitch decks are visual documents, the extraction step also captures slide structure and ordering so the AI can reason about narrative flow, not just raw text.</p>
+    <p>The extracted content is sent to the OpenAI API with a multi-section system prompt modeled on how real investors evaluate decks: problem clarity, market opportunity, solution differentiation, traction and metrics, team, business model, and ask. The model returns a structured JSON response — validated with Zod — containing a score and specific feedback for each dimension, plus an overall summary and a prioritized list of fixes.</p>
+    <p>Long-running analysis is handled within Vercel serverless functions with streaming responses, so founders see the report build section by section rather than staring at a spinner. The report UI renders each dimension as an expandable card with its score, strengths, weaknesses, and actionable recommendations.</p>
+
+    <h2>Key Features Delivered</h2>
+    <p>The core flow is deliberately frictionless: drag-and-drop a PDF, wait a few seconds, get a full report — no account required for the first analysis. Founders can then create an account to save reports, track revisions over time, and compare how their deck improved between versions.</p>
+    <p>Each analysis produces a shareable report link, letting founders send the breakdown to co-founders or advisors. The design feedback dimension uses the parsed slide layout to flag common issues like text-heavy slides, missing key metrics, and inconsistent visual hierarchy.</p>
+
+    <h2>Results</h2>
+    <div class="stats">
+      <div class="stat"><span class="value">&lt;10s</span><div class="label">Average analysis time</div></div>
+      <div class="stat"><span class="value">7</span><div class="label">Investor dimensions scored</div></div>
+      <div class="stat"><span class="value">100%</span><div class="label">Serverless — zero ops</div></div>
+    </div>
+    <p>PitchLens turns a slow, expensive, subjective process into an instant, consistent, and affordable one. The streaming report experience and the investor-modeled scoring framework made the feedback feel credible to founders, and the no-signup-required first analysis drove strong top-of-funnel conversion.</p>
+
+    <a href="https://simonstackdev.com" class="back-link">← Back to all projects</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Simón Escobar — <a href="https://simonstackdev.com">simonstackdev.com</a></p>
+  </footer>
+</body>
+</html>
