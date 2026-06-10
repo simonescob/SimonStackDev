@@ -29,7 +29,6 @@
   <link rel="alternate" hreflang="x-default" href="https://simonstackdev.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="/og.png">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -158,7 +157,7 @@
             "name": "Where can I see Simón Escobar's work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can view Simón Escobar's portfolio and featured case studies at simonstackdev.com — including LeadPulse AI (simonstackdev.com/work/leadpulse-ai), PitchLens (simonstackdev.com/work/pitchlens), and LeaseScan (simonstackdev.com/work/leasescan) — and his open-source work at github.com/simonescob."
+              "text": "You can view Simón Escobar's live projects at simonstackdev.com — including LeadPulse AI (leadpulse-ai-nu.vercel.app), PitchLens (pitch-lens-front.vercel.app), and LeaseScan (lease-scan-zeta.vercel.app) — and his open-source work at github.com/simonescob."
             }
           }
         ]
@@ -329,7 +328,7 @@
       <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#projects">Projects</a>
       <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md" href="#faq">FAQ</a>
     </div>
-    <a href="https://cal.com/simonescob/quick-call" target="_blank" rel="noopener" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg font-semibold hover:opacity-90 active:scale-95 transition-all text-sm">
+    <a href="https://cal.com/simonescob/quick-call" target="_blank" rel="noopener" class="bg-white text-gray-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 active:scale-95 transition-all text-sm">
       Hire Me
     </a>
   </div>
@@ -342,31 +341,99 @@
     <div class="hero-glow absolute inset-0 pointer-events-none"></div>
     <div class="max-w-container-max mx-auto px-gutter w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-20">
       <div class="z-10">
+        <!-- Availability badge -->
+        <div class="inline-flex items-center gap-2 mb-7 pl-3 pr-4 py-1.5 rounded-full border border-white/10" style="background: rgba(22,22,22,0.8);">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400"></span>
+          </span>
+          <span class="font-label-mono text-label-mono text-on-surface uppercase tracking-widest">Available for Work</span>
+        </div>
+
         <h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface mb-6">
-          Simón Escobar — <span class="text-primary">Senior Full-Stack Developer</span>
+          Ship your product with a <span class="text-primary">senior full-stack developer</span>
         </h1>
-        <p class="font-body-lg text-body-lg text-text-muted mb-10 max-w-xl">
-          I build fast, scalable, and modern web applications using React, Next.js, Node.js, and TypeScript. Available for freelance projects and full-time opportunities. US timezones. 40–60% less than US rates.
+        <p class="font-body-lg text-body-lg text-text-muted mb-8 max-w-xl">
+          I turn ideas into fast, scalable web apps with React, Next.js, Node.js &amp; TypeScript — built for US startups, in your timezone, at <span class="text-on-surface font-semibold">40–60% less than US rates</span>.
         </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="https://cal.com/simonescob/quick-call" target="_blank" rel="noopener" class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(91,190,203,0.4)] transition-all">
-            Get In Touch
+
+        <div class="flex flex-wrap gap-4 mb-4">
+          <a href="https://cal.com/simonescob/quick-call" target="_blank" rel="noopener" class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(91,190,203,0.4)] active:scale-95 transition-all">
+            Book a Free Strategy Call
           </a>
-          <a href="https://github.com/simonescob" class="border border-primary-container text-primary-container px-8 py-4 rounded-lg font-bold hover:bg-primary/5 transition-all">
-            View GitHub
+          <a href="#projects" class="border border-primary-container text-primary-container px-8 py-4 rounded-lg font-bold hover:bg-primary/5 transition-all">
+            See My Work
           </a>
         </div>
+        <p class="text-sm text-text-muted mb-8">or <a href="mailto:hello@simonescob.com" class="text-primary underline hover:opacity-80">email me directly</a></p>
+
+        <!-- Trust signals -->
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 text-text-muted">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary" style="font-size:20px;">schedule</span>
+            <span class="font-body-md text-sm">Free 30-min call · No commitment</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary" style="font-size:20px;">verified</span>
+            <span class="font-body-md text-sm">30+ projects shipped · 5+ years</span>
+          </div>
+        </div>
       </div>
-      <div class="relative group">
-        <div class="absolute -inset-1 bg-primary/20 blur-2xl group-hover:bg-primary/30 transition-all rounded-xl"></div>
-        <img
-          src="/og.png"
-          width="1200"
-          height="630"
-          fetchpriority="high"
-          alt="Simón Escobar — Senior Full-Stack Developer portfolio"
-          class="relative rounded-xl border border-white/10 shadow-2xl w-full h-auto block"
-        >
+
+      <!-- Offer card -->
+      <div class="relative group z-10">
+        <div class="absolute -inset-1 bg-primary/10 blur-2xl group-hover:bg-primary/20 transition-all rounded-2xl pointer-events-none"></div>
+        <div class="glass-panel relative rounded-2xl p-card-padding">
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="font-headline-md text-headline-md text-on-surface">What you get</h2>
+            <span class="font-label-mono text-label-mono text-primary uppercase tracking-widest px-3 py-1 rounded-full bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)]">Fixed price</span>
+          </div>
+          <p class="text-text-muted font-body-md mb-6">Senior full-stack delivery, structured to de-risk your build.</p>
+
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary flex-shrink-0" style="font-size:22px;">check_circle</span>
+              <div>
+                <span class="text-on-surface font-body-md font-semibold">Weekly demos</span>
+                <span class="text-text-muted font-body-md"> — see real progress every week, no black box.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary flex-shrink-0" style="font-size:22px;">check_circle</span>
+              <div>
+                <span class="text-on-surface font-body-md font-semibold">Direct Slack access</span>
+                <span class="text-text-muted font-body-md"> — talk to the developer, not an account manager.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary flex-shrink-0" style="font-size:22px;">check_circle</span>
+              <div>
+                <span class="text-on-surface font-body-md font-semibold">Fixed-price quote in 48h</span>
+                <span class="text-text-muted font-body-md"> — scope, timeline &amp; price up front. No hourly surprises.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary flex-shrink-0" style="font-size:22px;">check_circle</span>
+              <div>
+                <span class="text-on-surface font-body-md font-semibold">US-timezone overlap</span>
+                <span class="text-text-muted font-body-md"> — real-time collaboration during your business hours.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="pt-6 border-t border-white/10">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
+              </span>
+              <span class="text-text-muted font-body-md text-sm">Taking on new projects this month</span>
+            </div>
+            <a href="https://cal.com/simonescob/quick-call" target="_blank" rel="noopener" class="block text-center bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(91,190,203,0.4)] active:scale-95 transition-all">
+              Book a Free Strategy Call
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -403,21 +470,45 @@
         <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Technical Skills</h2>
         <p class="text-primary font-label-mono text-label-mono">Curated Technology Stack</p>
       </div>
-      <div class="flex flex-wrap gap-3">
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">React</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Next.js</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Node.js</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">TypeScript</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">JavaScript</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">PostgreSQL</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Supabase</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">GraphQL</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">REST APIs</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Tailwind CSS</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Docker</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">CI/CD</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">AWS</span>
-        <span class="px-5 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Vercel</span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <p class="font-label-mono text-label-mono text-text-muted uppercase tracking-widest mb-4">Frontend</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">React</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Next.js</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">TypeScript</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">JavaScript</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Tailwind CSS</span>
+          </div>
+        </div>
+        <div>
+          <p class="font-label-mono text-label-mono text-text-muted uppercase tracking-widest mb-4">Backend</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Node.js</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">PostgreSQL</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Supabase</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">GraphQL</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">REST APIs</span>
+          </div>
+        </div>
+        <div>
+          <p class="font-label-mono text-label-mono text-text-muted uppercase tracking-widest mb-4">DevOps &amp; Cloud</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Docker</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">CI/CD</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">AWS</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">Vercel</span>
+          </div>
+        </div>
+        <div>
+          <p class="font-label-mono text-label-mono text-text-muted uppercase tracking-widest mb-4">AI &amp; Integrations</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">OpenAI</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">LLM APIs</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">RAG</span>
+            <span class="px-4 py-2 font-label-mono text-label-mono bg-[rgba(40,102,110,0.2)] border border-[rgba(40,102,110,0.4)] text-primary rounded-full">PDF Parsing</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -427,6 +518,10 @@
     <div class="max-w-container-max mx-auto px-gutter">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div class="lg:col-span-4">
+          <!-- Replace assets/photo.jpg with your headshot -->
+          <img src="assets/photo.jpg" alt="Simón Escobar, Senior Full-Stack Developer"
+               class="w-40 h-40 rounded-full object-cover mb-8 ring-4 ring-primary/20"
+               onerror="this.remove()">
           <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">About Me</h2>
           <div class="h-1 w-20 bg-primary"></div>
         </div>
@@ -469,32 +564,46 @@
   <!-- Featured Projects -->
   <section class="py-section-gap-mobile md:py-section-gap-desktop" style="background: rgba(28,27,27,0.2);" id="projects">
     <div class="max-w-container-max mx-auto px-gutter">
-      <div class="flex flex-col md:flex-row md:items-center justify-between mb-16 gap-6">
-        <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Featured Projects</h2>
-        <a class="text-primary hover:underline flex items-center gap-2 font-body-md" href="https://github.com/simonescob">
-          See all experiments
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-4 gap-6">
+        <div>
+          <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-2">Work That Ships</h2>
+          <p class="text-text-muted font-body-md">Every project below is live, shipped, and built by me alone.</p>
+        </div>
+        <a class="text-primary hover:underline flex items-center gap-2 font-body-md flex-shrink-0" href="https://github.com/simonescob">
+          See all on GitHub
           <span class="material-symbols-outlined" style="font-size:16px;">open_in_new</span>
         </a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
 
         <!-- LeadPulse AI -->
         <div class="glass-panel group rounded-xl overflow-hidden flex flex-col h-full">
           <div class="h-64 bg-surface-container-high relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+            <!-- Add assets/leadpulse-screenshot.png to show a real screenshot -->
+            <img src="assets/leadpulse-screenshot.png" alt="LeadPulse AI dashboard"
+                 class="absolute inset-0 w-full h-full object-cover object-top"
+                 onerror="this.remove()">
+            <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60 pointer-events-none"></div>
             <div class="absolute inset-0 flex items-center justify-center">
               <span class="material-symbols-outlined text-6xl group-hover:scale-110 transition-transform duration-500" style="color: rgba(121,218,231,0.2);">robot_2</span>
             </div>
           </div>
           <div class="p-card-padding flex flex-col flex-grow">
-            <h3 class="font-headline-md text-headline-md mb-3">
+            <h3 class="font-headline-md text-headline-md mb-1">
               <a href="https://leadpulse-ai-nu.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:opacity-80 transition-opacity">LeadPulse AI</a>
             </h3>
-            <p class="text-on-surface-variant font-body-md mb-6">AI-powered lead scoring and CRM enrichment SaaS built with Next.js, OpenAI, and PostgreSQL. Automatically surfaces high-intent prospects and cut sales cycle time by 40%.</p>
-            <div class="mt-auto pt-6 border-t border-white/5 flex flex-wrap gap-3">
-              <span class="font-label-mono text-label-mono text-text-muted uppercase">Next.js</span>
-              <span class="font-label-mono text-label-mono text-text-muted uppercase">OpenAI</span>
-              <span class="font-label-mono text-label-mono text-text-muted uppercase">PostgreSQL</span>
+            <!-- TODO: update metric to match actual numbers -->
+            <p class="font-label-mono text-label-mono text-text-muted uppercase mb-4">AI lead scoring SaaS · cuts sales cycle time by 40%</p>
+            <p class="text-on-surface-variant font-body-md mb-6">AI-powered lead scoring and CRM enrichment built with Next.js, OpenAI, and PostgreSQL. Automatically surfaces high-intent prospects so sales teams focus on deals that close.</p>
+            <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between flex-wrap gap-3">
+              <div class="flex flex-wrap gap-3">
+                <span class="font-label-mono text-label-mono text-text-muted uppercase">Next.js</span>
+                <span class="font-label-mono text-label-mono text-text-muted uppercase">OpenAI</span>
+                <span class="font-label-mono text-label-mono text-text-muted uppercase">PostgreSQL</span>
+              </div>
+              <a href="https://leadpulse-ai-nu.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:text-white transition-colors flex items-center gap-1 font-body-md font-semibold text-sm">
+                View Live Project <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+              </a>
             </div>
           </div>
         </div>
@@ -502,38 +611,55 @@
         <!-- PitchLens -->
         <div class="glass-panel group rounded-xl overflow-hidden flex flex-col h-full">
           <div class="h-64 bg-surface-container-high relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+            <!-- Add assets/pitchlens-screenshot.png to show a real screenshot -->
+            <img src="assets/pitchlens-screenshot.png" alt="PitchLens pitch deck analyzer"
+                 class="absolute inset-0 w-full h-full object-cover object-top"
+                 onerror="this.remove()">
+            <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60 pointer-events-none"></div>
             <div class="absolute inset-0 flex items-center justify-center">
               <span class="material-symbols-outlined text-6xl group-hover:scale-110 transition-transform duration-500" style="color: rgba(121,218,231,0.2);">analytics</span>
             </div>
           </div>
           <div class="p-card-padding flex flex-col flex-grow">
-            <h3 class="font-headline-md text-headline-md mb-3">
+            <h3 class="font-headline-md text-headline-md mb-1">
               <a href="https://pitch-lens-front.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:opacity-80 transition-opacity">PitchLens</a>
             </h3>
-            <p class="text-on-surface-variant font-body-md mb-6">An AI pitch deck analyzer that gives founders instant, investor-grade feedback in seconds. Built on a fully serverless Next.js stack with OpenAI and PDF parsing.</p>
-            <div class="mt-auto pt-6 border-t border-white/5 flex flex-wrap gap-3">
-              <span class="font-label-mono text-label-mono text-text-muted uppercase">Serverless</span>
-              <span class="font-label-mono text-label-mono text-text-muted uppercase">PDF Parsing</span>
-              <span class="font-label-mono text-label-mono text-text-muted uppercase">Next.js</span>
+            <!-- TODO: update metric to match actual numbers -->
+            <p class="font-label-mono text-label-mono text-text-muted uppercase mb-4">AI pitch deck analyzer · feedback in seconds</p>
+            <p class="text-on-surface-variant font-body-md mb-6">Gives founders instant, investor-grade feedback on their pitch decks. Built on a fully serverless Next.js stack with OpenAI and PDF parsing.</p>
+            <div class="mt-auto pt-6 border-t border-white/5 flex items-center justify-between flex-wrap gap-3">
+              <div class="flex flex-wrap gap-3">
+                <span class="font-label-mono text-label-mono text-text-muted uppercase">Serverless</span>
+                <span class="font-label-mono text-label-mono text-text-muted uppercase">PDF Parsing</span>
+                <span class="font-label-mono text-label-mono text-text-muted uppercase">Next.js</span>
+              </div>
+              <a href="https://pitch-lens-front.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:text-white transition-colors flex items-center gap-1 font-body-md font-semibold text-sm">
+                View Live Project <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+              </a>
             </div>
           </div>
         </div>
 
         <!-- LeaseScan — full width -->
         <div class="md:col-span-2 glass-panel group rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
-          <div class="h-64 md:h-auto bg-surface-container-high relative">
+          <div class="h-64 md:h-auto bg-surface-container-high relative overflow-hidden">
+            <!-- Add assets/leasescan-screenshot.png to show a real screenshot -->
+            <img src="assets/leasescan-screenshot.png" alt="LeaseScan AI lease analysis"
+                 class="absolute inset-0 w-full h-full object-cover object-top"
+                 onerror="this.remove()">
             <div class="absolute inset-0 flex items-center justify-center">
               <span class="material-symbols-outlined group-hover:rotate-12 transition-transform duration-700" style="font-size:96px; color: rgba(121,218,231,0.1);">description</span>
             </div>
           </div>
           <div class="p-card-padding">
-            <h3 class="font-headline-md text-headline-md mb-3">
+            <h3 class="font-headline-md text-headline-md mb-1">
               <a href="https://lease-scan-zeta.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:opacity-80 transition-opacity">LeaseScan</a>
             </h3>
-            <p class="text-on-surface-variant font-body-md mb-6">AI lease analysis software that extracts key terms, renewal dates, and risk clauses from commercial leases — every value cited back to the source document.</p>
+            <!-- TODO: update metric to match actual numbers -->
+            <p class="font-label-mono text-label-mono text-text-muted uppercase mb-4">AI lease analysis · hours of review → minutes</p>
+            <p class="text-on-surface-variant font-body-md mb-6">Extracts key terms, renewal dates, and risk clauses from commercial leases — every value cited back to the source document, so nothing is taken on faith.</p>
             <a href="https://lease-scan-zeta.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:text-white transition-colors flex items-center gap-2 font-body-md font-semibold">
-              View Project <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+              View Live Project <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
             </a>
           </div>
         </div>
@@ -604,7 +730,7 @@
             <span class="material-symbols-outlined text-primary flex-shrink-0 transition-transform duration-300">expand_more</span>
           </button>
           <div class="faq-answer hidden px-6 pb-6 pt-4 text-on-surface-variant font-body-md border-x border-b border-surface-container-high rounded-b-lg" style="background: #1c1b1b;">
-            You can view Simón Escobar's portfolio and featured case studies at simonstackdev.com — including <a href="/work/leadpulse-ai" class="text-primary hover:underline">LeadPulse AI</a>, <a href="/work/pitchlens" class="text-primary hover:underline">PitchLens</a>, and <a href="/work/leasescan" class="text-primary hover:underline">LeaseScan</a> — and his open-source work at <a href="https://github.com/simonescob" class="text-primary hover:underline">github.com/simonescob</a>.
+            You can view Simón Escobar's live projects at simonstackdev.com — including <a href="https://leadpulse-ai-nu.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:underline">LeadPulse AI</a>, <a href="https://pitch-lens-front.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:underline">PitchLens</a>, and <a href="https://lease-scan-zeta.vercel.app/" target="_blank" rel="noopener" class="text-primary hover:underline">LeaseScan</a> — and his open-source work at <a href="https://github.com/simonescob" target="_blank" rel="noopener" class="text-primary hover:underline">github.com/simonescob</a>.
           </div>
         </div>
 
@@ -613,13 +739,14 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-section-gap-mobile md:py-section-gap-desktop text-center" style="background: #79dae7; color: #00363c;">
+  <section id="cta" class="py-section-gap-mobile md:py-section-gap-desktop text-center" style="background: #79dae7; color: #00363c;">
     <div class="max-w-container-max mx-auto px-gutter">
       <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6">Ready to scale your next big idea?</h2>
       <p class="font-body-lg text-body-lg mb-10 max-w-2xl mx-auto" style="color: rgba(0,54,60,0.75);">Currently accepting new projects. Let's discuss how my full-stack expertise can help you reach your goals.</p>
       <a href="https://cal.com/simonescob/quick-call" target="_blank" rel="noopener" class="inline-block px-10 py-5 rounded-lg font-bold text-lg hover:scale-105 transition-all shadow-xl" style="background: #00363c; color: #79dae7;">
         Book a Free Strategy Call
       </a>
+      <p class="mt-4 text-sm" style="color: rgba(0,54,60,0.6);">or <a href="mailto:hello@simonescob.com" class="underline hover:opacity-80" style="color: #004b52;">email me directly</a></p>
     </div>
   </section>
 
@@ -671,19 +798,19 @@
     }
   }
 
-  // Intersection observer fade-in
+  // Intersection observer fade-in — excluded from #cta so it's always visible
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('opacity-100', 'translate-y-0');
-        entry.target.classList.remove('opacity-0', 'translate-y-10');
+        entry.target.classList.remove('opacity-0', 'translate-y-8');
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.05 });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
 
-  document.querySelectorAll('section').forEach(function(section) {
-    section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+  document.querySelectorAll('section:not(#cta)').forEach(function(section) {
+    section.classList.add('transition-all', 'duration-500', 'opacity-0', 'translate-y-8');
     observer.observe(section);
   });
 </script>
